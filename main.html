@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" id="i2-html">
+
+<head>
+    <title>site_lines</title>
+    <link rel="stylesheet" href="Structure1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function menuFunc() {
+            let menu = document.getElementById("menu-visible") == null ? document.getElementById("menu-hidden") : document.getElementById("menu-visible");
+            let close = document.getElementById("close-hidden") == null ? document.getElementById("close-visible") : document.getElementById("close-hidden");
+            let nav_left = document.getElementById("nav-left-mobile") == null ? document.getElementById("nav-left-mobile-alt") : document.getElementById("nav-left-mobile");
+            let container2 = document.getElementById("nav-left-mobile-container2") == null ? document.getElementById("nav-left-mobile-container2-alt") : document.getElementById("nav-left-mobile-container2");
+            
+
+            if (menu.id === "menu-hidden") {
+                menu.id = "menu-visible";
+                close.id = "close-hidden";
+                nav_left.id = "nav-left-mobile-alt1";
+                container2.id = "nav-left-mobile-container2-alt";
+                setTimeout(() => {
+                    nav_left.id = "nav-left-mobile";
+                    container2.id = "nav-left-mobile-container2";
+                }, 400);
+            } else {
+                close.id = "close-visible";
+                menu.id = "menu-hidden";
+                nav_left.id = "nav-left-mobile-alt";
+            }
+        }
+    </script>
+</head>
+
+<body id="i2-body">
+    <div id="body-div1">
+        <header id="header">
+            <nav id="nav">
+                <div id="nav-layer1">
+                    <div id="nav-layer1-div0">
+                        <ul id="nav-layer1-div0-ul">
+                            <li id="nav-layer1-div0-li1"><button id="menu-visible" class="material-symbols-outlined"
+                                    onclick="menuFunc()">menu</button><button id="close-hidden"
+                                    class="material-symbols-outlined" onclick="menuFunc()">close</button></li>
+                            <!-- <li id="nav-layer1-div1-li1"><a id="nav-lay er1-div1-li1-link1" class="material-icons more_horiz" href="">more_horiz</a></li> -->
+                        </ul>
+                    </div>
+                    <div id="nav-layer1-div1">
+                        <ul id="nav-layer1-div1-ul">
+                            <!-- <li id="nav-layer1-div1-li1"><a id="nav-lay er1-div1-li1-link1" class="material-icons more_horiz" href="">more_horiz</a></li> -->
+                            <li id="nav-layer1-div1-li2"><a class="logo" id="nav-layer1-div1-li2-link1"
+                                    href="main.html">site<span class="yellow logo-underscore">_</span>lines</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="nav-layer1-div2"></div>
+
+                    <div id="nav-layer1-div3">
+                        <a id="nav-layer1-div3-link1" href="#about">
+                            <ul id="nav-layer1-div3-ul">
+                                <li id="nav-layer1-div3-li">about</li>
+                            </ul>
+                        </a>
+                    </div>
+
+                    <div id="nav-layer1-div4">
+                        <a id="nav-layer1-div4-link1" href="">
+                            <ul id="nav-layer1-div4-ul">
+                                <li id="nav-layer1-div4-li">contact</li>
+                            </ul>
+                        </a>
+                    </div>
+
+                </div>
+                <div id="nav-layer2">
+                    <div id="nav-layer2-div1">
+                        <ul id="nav-layer2-div1-ul">
+                            <!-- <li id="nav-layer2-div1-li1"><a id="nav-layer2-div1-li1-link1" class="material-icons" style="font-size: 48px" href="">more_horiz</a></li> -->
+                            <!-- <li id="nav-layer2-div1-li2">site<a id="nav-layer2-div1-li2-link1" class="yellow i2-nav-underscore" href="">_</a>lines</li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav-layer3">
+                    <div id="nav-layer3-div1">
+
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <nav id="nav-left">
+            <div id="nav-left-div2">
+                <a id="nav-left-div2-link1" href="#essentials">
+                    <ul id="nav-left-div2-ul">
+                        <li class="yellow" id="nav-left-div2-li1">year<span class="yellow i2-nav-underscore">_</span>
+                        </li>
+                        <li id="nav-left-div2-li2">essentials</li>
+                    </ul>
+                </a>
+            </div>
+            <div id="nav-left-div3">
+                <a id="nav-left-div3-link1" href="#movement">
+                    <ul id="nav-left-div3-ul">
+                        <li id="nav-left-div3-li1">spring and summer<span id="yellow i2-nav-underscore"></span></li>
+                        <li id="nav-left-div3-li2">movement</li>
+                    </ul>
+                </a>
+            </div>
+            <div id="nav-left-div5">
+                <a id="nav-left-div5-li1-link1" href="#touch">
+                    <ul id="nav-left-div5-ul">
+                        <li id="nav-left-div5-li1">autunm and winter<span id="yellow i2-nav-underscore"></span></li>
+                        <li id="nav-left-div5-li2">touch</li>
+                    </ul>
+                </a>
+            </div>
+            <div id="nav-left-div4">
+                <a id="nav-left-div4-link1" href="#feast">
+                    <ul id="nav-left-div4-ul">
+                        <li id="nav-left-div4-li1">seasonal</li>
+                        <li id="nav-left-div4-li2">feast</li>
+                    </ul>
+                </a>
+            </div>
+            <div id="nav-left-div6">
+                <a id="nav-left-div6-li1-link1" href="#essential">
+                    <ul id="nav-left-div6-ul">
+                        <li class="yellow" id="nav-left-div6-li1"><span class="yellow i2-nav-underscore">_</span>round
+                        </li>
+                        <li id="nav-left-div6-li2">essential</li>
+                    </ul>
+                </a>
+            </div>
+        </nav>
+        <nav id="nav-left-mobile">
+            <div id="nav-left-mobile-container1">
+                <div id="nav-left-mobile-div0">
+                    <ul id="nav-left-mobile-div0-ul">
+                        <a id="nav-left-mobile-div0-link1" href="#about" onclick="menuFunc()">
+                            <li id="nav-left-mobile-div0-li">about</li>
+                        </a>
+                        <a id="nav-left-mobile-div0-link2" href="#contact" onclick="menuFunc()">
+                            <li id="nav-left-mobile-div0-li"">contact</li>
+                            </a>
+                        </ul>
+                </div>
+                <div id=" nav-left-mobile-div2">
+                                <a id="nav-left-mobile-div2-link1" href="#essentials" onclick="menuFunc()">
+                                    <ul id="nav-left-mobile-div2-ul">
+                                        <li class="yellow" id="nav-left-mobile-div2-li1">year<span
+                                                class="yellow i2-nav-underscore">_</span></li>
+                                        <li id="nav-left-mobile-div2-li2">essentials</li>
+                                    </ul>
+                                </a>
+                </div>
+                <div id="nav-left-mobile-div3">
+                    <a id="nav-left-mobile-div3-link1" href="#movement" onclick="menuFunc()">
+                        <ul id="nav-left-mobile-div3-ul">
+                            <li id="nav-left-mobile-div3-li1">spring and summer<span
+                                    id="yellow i2-nav-underscore"></span></li>
+                            <li id="nav-left-mobile-div3-li2">movement</li>
+                        </ul>
+                    </a>
+                </div>
+                <div id="nav-left-mobile-div5">
+                    <a id="nav-left-mobile-div5-li1-link1" href="#touch" onclick="menuFunc()">
+                        <ul id="nav-left-mobile-div5-ul">
+                            <li id="nav-left-mobile-div5-li1">autunm and winter<span
+                                    id="yellow i2-nav-underscore"></span></li>
+                            <li id="nav-left-mobile-div5-li2">touch</li>
+                        </ul>
+                    </a>
+                </div>
+                <div id="nav-left-mobile-div4">
+                    <a id="nav-left-mobile-div4-link1" href="#feast" onclick="menuFunc()">
+                        <ul id="nav-left-mobile-div4-ul">
+                            <li id="nav-left-mobile-div4-li1">seasonal</li>
+                            <li id="nav-left-mobile-div4-li2">feast</li>
+                        </ul>
+                    </a>
+                </div>
+                <div id="nav-left-mobile-div6">
+                    <a id="nav-left-mobile-div6-li1-link1" href="#essential" onclick="menuFunc()">
+                        <ul id="nav-left-mobile-div6-ul">
+                            <li class="yellow" id="nav-left-mobile-div6-li1"><span
+                                    class="yellow i2-nav-underscore">_</span>round</li>
+                            <li id="nav-left-mobile-div6-li2">essential</li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+            <div id="nav-left-mobile-container2"  onclick="menuFunc()"></div>
+        </nav>
+    </div>
+    <div id="body-div2">
+        <div id="body-div2-1" class="body-div2-text">
+            <p class="subsection" id="essentials">Year-round</p>
+            <p class="engagement">ESSENTIALS / 100 / 40 available</p>
+            <p>Morbi non arcu risus quis. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. Volutpat
+                odio facilisis mauris sit amet. Dignissim suspendisse in est ante in nibh mauris. Lacus sed turpis
+                tincidunt id aliquet risus feugiat in ante. Dolor purus non enim praesent elementum facilisis leo.
+                Vestibulum sed arcu non odio euismod lacinia at quis. Enim sit amet venenatis urna cursus eget nunc
+                scelerisque viverra. Tellus at urna condimentum mattis pellentesque id. Convallis aenean et tortor at
+                risus viverra adipiscing at in. Tempor nec feugiat nisl pretium fusce id velit. Suspendisse ultrices
+                gravida dictum fusce ut placerat. </p>
+            <p>Urna cursus eget nunc scelerisque. Non tellus orci ac auctor. Ultrices sagittis orci a scelerisque purus.
+                Fermentum dui faucibus in ornare quam viverra. Et netus et malesuada fames ac. Lectus quam id. </p>
+            <div id="body-div2-1-div-outer" class="image-div-outer">
+                <div id="body-div2-1-div-inner" class="image-div-inner body-div2-1-div-inner">
+                    <img id="body-div2-1-div-img" class="image body-div2-1-div-img1"
+                        src="images/Jaya's lavender_dad's deck-196.jpg" alt="Lavender flowers on a deck">
+                </div>
+            </div>
+        </div>
+        <div id="body-div2-2" class="body-div2-text">
+            <p class="subsection" id="movement">Spring and Summer</p>
+            <p class="engagement">MOVEMENT / 200 / 30 available:</p>
+            <p>Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Tempor orci eu lobortis elementum. Sit
+                amet consectetur adipiscing elit pellentesque habitant. Morbi tristique senectus et netus et malesuada
+                fames. Amet dictum sit amet justo donec enim diam. Interdum velit laoreet id donec. Commodo elit at
+                imperdiet dui accumsan sit amet. Vitae et leo duis ut. Tellus orci ac auctor augue mauris augue. Viverra
+                ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Varius morbi enim nunc faucibus a
+                pellentesque. Praesent tristique magna sit amet purus. Id aliquet lectus proin nibh nisl condimentum id
+                venenatis a. At urna condimentum mattis pellentesque. Dui id ornare. </p>
+            <div id="body-div2-2-div-outer" class="image-div-outer">
+                <div id="body-div2-2-div-inner" class="image-div-inner body-div2-2-div-inner">
+                    <img id="body-div2-2-div-img" class="image body-div2-2-div-img" src="images/108K2_00557-106.jpg"
+                        alt="Lavender flowers on a deck">
+                </div>
+            </div>
+        </div>
+        <div id="body-div2-3" class="body-div2-text">
+            <p class="subsection" id="touch">Autunm and Winter</p>
+            <p class="engagement">TOUCH / 300 / 20 available</p>
+            <p>Hendrerit dolor magna eget est lorem. Eu ultrices vitae auctor eu augue ut. Neque sodales ut etiam sit
+                amet nisl purus in. Eget felis eget nunc lobortis mattis aliquam faucibus. Lacus viverra vitae congue eu
+                consequat ac felis donec et. Sed augue lacus viverra vitae congue eu consequat ac. Nec ullamcorper sit
+                amet risus nullam. Pellentesque adipiscing commodo elit at imperdiet dui. Consequat mauris nunc congue
+                nisi vitae.</p>
+            <p>Orci dapibus ultrices in iaculis nunc sed. Eu turpis egestas pretium aenean. Sit amet justo donec enim.
+                Cras adipiscing enim eu turpis egestas pretium aenean pharetra magna. Mauris sit amet massa REALthings.
+            </p>
+            <br>
+            <p class="engagement">TOUCH / 400 / please <strong>contact</strong> for availability</p>
+            <div id="body-div2-3-div-outer" class="image-div-outer">
+                <div id="body-div2-3-div-inner" class="image-div-inner body-div2-3-div-inner">
+                    <img id="body-div2-3-div-img" class="image body-div2-3-div-img" src="images/µëï-110.jpg"
+                        alt="Lavender flowers on a deck">
+                </div>
+            </div>
+        </div>
+        <div id="body-div2-4" class="body-div2-text">
+            <p class="subsection" id="feast">Seasonal</p>
+            <p class="engagement">FEAST / 500 / 4 available</p>
+            <p>Id diam vel quam elementum. Et netus et malesuada fames ac. Id neque aliquam vestibulum morbi blandit
+                cursus. Enim nulla aliquet porttitor lacus. Lorem ipsum dolor sit amet consectetur adipiscing elit duis.
+                Habitant morbi tristique senectus et. Mi proin sed libero enim sed. Ornare suspendisse sed nisi lacus
+                sed viverra tellus. Lacus sed turpis tincidunt id. Enim lobortis scelerisque fermentum dui faucibus.
+                Tortor dignissim convallis aenean et tortor at risus viverra adipiscing. Nunc scelerisque viverra mauris
+                in. Etiam sit amet nisl purus in mollis. Pellentesque habitant morbi tristique senectus. </p>
+            <p>Pellentesque adipiscing commodo elit at imperdiet dui. Malesuada fames ac turpis egestas maecenas
+                pharetra convallis.</p>
+            <br>
+            <p class="engagement">F&#234te / 700 / 1 available</p>
+            <p>Malesuada fames ac turpis egestas maecenas pharetra convallis.</p>
+            <div id="body-div2-4-div-outer" class="image-div-outer">
+                <div id="body-div2-4-div-inner" class="image-div-inner body-div2-4-div-inner">
+                    <img id="body-div2-4-div-img" class="image body-div2-4-div-img"
+                        src="images/IMG_20190526_125744-112.jpg" alt="Lavender flowers on a deck">
+                </div>
+            </div>
+        </div>
+        <div id="body-div2-5" class="body-div2-text">
+            <p class="subsection" id="essential">Year-round</p>
+            <p class="engagement">ESSENTIAL / >500 / available</p>
+            <p>Cursus turpis massa tincidunt dui ut ornare. Commodo quis imperdiet massa tincidunt nunc. </p>
+            <p>Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Eu feugiat pretium nibh ipsum
+                consequat nisl. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Blandit volutpat maecenas
+                volutpat blandit aliquam etiam erat velit scelerisque. Egestas erat imperdiet sed euismod nisi.
+                Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. At in tellus integer feugiat
+                scelerisque varius morbi enim. </p>
+            <div id="body-div2-5-div-outer" class="image-div-outer">
+                <div id="body-div2-5-div-inner" class="image-div-inner body-div2-5-div-inner">
+                    <img id="body-div2-5-div-img" class="image body-div2-5-div-img" src="images/tsubu-194.jpg"
+                        alt="Lavender flowers on a deck">
+                </div>
+            </div>
+        </div>
+        <div id="body-div2-6" class="body-div2-text">
+            <p class="subsection" id="about"> </p>
+            <div id="body-div2-6-div1">
+                <p class="quote_text">Id diam vel quam elementum. Et netus et malesuada fames ac. Id neque aliquam
+                    vestibulum morbi blandit cursus. Enim nulla aliquet porttitor lacus. Lorem ipsum dolor sit amet
+                    consectetur adipiscing elit duis. Habitant morbi tristique senectus et. Mi proin sed libero enim
+                    sed. Ornare suspendisse sed nisi lacus sed viverra tellus.</p>
+                <p class="quote_author">-Helkiah Crooke, ‘The Crooke Book’</p>
+            </div>
+            <p id="body-div2-6-title1">site<span class="sitelines_underscore">_</span>lines</p>
+            <p>Id diam vel quam elementum. Et netus et malesuada fames ac. Id neque aliquam vestibulum morbi blandit
+                cursus. Enim nulla aliquet porttitor lacus. Lorem ipsum dolor sit amet consectetur adipiscing elit duis.
+                Habitant morbi tristique senectus et.</p>
+            <div id="body-div2-6-div2">
+                <div id="body-div2-6-div2-1">
+                    <img src="images/1422978777.997_117_o-200.jpg" alt="">
+                    <span>Chiharu Shiota Skin, 2014 Thread on canvas 40 x 30</span>
+                </div>
+                <div id="body-div2-6-div2-2">
+                    <ul>
+                        <li>BODY</li>
+                        <li>ART</li>
+                        <li>MEGALITH ASTRONOMY</li>
+                        <li>INFORMATION DESIGN</li>
+                        <li>SIGN SYSTEMS</li>
+                        <li>INTERCULTURALITY</li>
+                        <li>INTERSUBJECTIVITY</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="body-div2-6-div3">
+                <!-- <div id="body-div2-6-div3-1"></div>  -->
+                <div id="body-div2-6-div3-2">
+                    <span>Please see the groundwork for site<span class="sitelines_underscore">_</span>lines...</span>
+                </div>
+                <div id="body-div2-6-div3-3">
+                    <img src="images/locked-202.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer id="footer">
+        <div id="footer-div" class="footer-div">
+            <span>web design: Michael D'Sa</span>
+            <span>dsa.michael@gmail.com</span>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -8,7 +8,9 @@ DONE 3. commit changes to git
 
 4. add Celine's page of small engagements to '_round essential'
 5. turn gate pic into a tag with empty href
-6. change Structure1.css name to Structure.css on *.html
+
+DONE 6. change Structure1.css name to Structure.css on *.html
+
 7. commit to git
 
 8. create the 'collaborations' page...

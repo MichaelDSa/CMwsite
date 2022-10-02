@@ -1,4 +1,4 @@
-Implement a new commenting protocol in GIT. Commit comments begin with a number between 0 and 5 signifying how important the change is.
+Implement a commenting protocol. Comments begin with a number between 0 and 5 signifying how important the change is.
 
 0 - for anything trivial or changing the todo.txt or readme.txt contents. 
 1 - simple progress: adding/modifying a function or adding some html
